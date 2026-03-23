@@ -1,289 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - LUXE MODAL</title>
-    <meta name="description" content="Get in touch with LUXE MODAL. We're here to help with any questions about sustainable fashion.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact EliteRoof Experts for professional roofing services in Portland, OR. Get a free quote today!">
+  <title>Contact Us - EliteRoof Experts</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header" id="mainHeader">
-        <div class="container">
-            <div class="header-content">
-                <a href="index.html" class="logo">
-                    <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
-                        <rect x="8" y="8" width="24" height="24" stroke="currentColor" stroke-width="1.5" rx="2"/>
-                        <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="1.5"/>
-                        <line x1="20" y1="8" x2="20" y2="14" stroke="currentColor" stroke-width="1.5"/>
-                        <line x1="20" y1="26" x2="20" y2="32" stroke="currentColor" stroke-width="1.5"/>
-                        <line x1="8" y1="20" x2="14" y2="20" stroke="currentColor" stroke-width="1.5"/>
-                        <line x1="26" y1="20" x2="32" y2="20" stroke="currentColor" stroke-width="1.5"/>
-                    </svg>
-                    <span>LUXE MODAL</span>
-                </a>
-                <nav class="main-nav">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="shop.html" class="nav-link">Shop</a>
-                    <a href="blog.html" class="nav-link">Journal</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="contact.html" class="nav-link active">Contact</a>
-                </nav>
-                <div class="header-actions">
-                    <button class="header-icon" id="searchToggle">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
-                        </svg>
-                    </button>
-                    <button class="header-icon" id="cartToggle">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
-                        </svg>
-                        <span class="cart-badge" id="cartCount">0</span>
-                    </button>
-                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                        <span></span><span></span><span></span>
-                    </button>
-                </div>
-            </div>
+  <!-- Header (Same as index.html) -->
+  <header class="site-header">
+    <div class="header-container container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+          </svg>
         </div>
-    </header>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <div class="mobile-menu-header">
-            <span>MENU</span>
-            <button class="mobile-menu-close" id="closeMobileMenu">×</button>
-        </div>
-        <nav class="mobile-nav">
-            <a href="index.html">Home</a>
-            <a href="shop.html">Shop</a>
-            <a href="blog.html">Journal</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <span class="logo-text">EliteRoof Experts</span>
+      </a>
+      
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      
+      <div class="header-actions">
+        <button class="btn btn-white" data-action="open-quote-modal">Get Free Quote</button>
+        <a href="tel:+15038365016" class="btn btn-primary" style="display: flex; align-items: center; gap: 0.5rem;">
+          <svg style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+          </svg>
+          <span>+1 503-836-5016</span>
+        </a>
+      </div>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
+    
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <div class="mobile-menu-actions">
+        <button class="btn btn-white" style="width: 100%;" data-action="open-quote-modal">Get Free Quote</button>
+        <a href="tel:+15038365016" class="btn btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+          <svg style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+          </svg>
+          <span>Call Now</span>
+        </a>
+      </div>
+    </div>
+  </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Get in Touch</h1>
-            <p>We'd love to hear from you. Send us a message and we'll respond within 24 hours.</p>
-        </div>
+  <!-- Main Content -->
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="hero" style="height: 300px; background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1726589004565-bedfba94d3a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb29maW5nJTIwY29udHJhY3RvciUyMHdvcmtpbmclMjByZXNpZGVudGlhbCUyMHJvb2Z8ZW58MXx8fHwxNzcyNzAwNjQ1fDA&ixlib=rb-4.1.0&q=80&w=1080');">
+      <div class="hero-content">
+        <h1 style="font-size: 2.5rem;">Contact Us</h1>
+        <p>Get in touch with EliteRoof Experts for all your roofing needs</p>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="section">
-        <div class="container" style="max-width: 1200px;">
-            <div style="display: grid; grid-template-columns: 1fr; gap: 4rem;">
-                <!-- Contact Form -->
-                <div style="grid-column: 1; order: 2;">
-                    <h2 style="font-size: 2rem; margin-bottom: 2rem; color: var(--deep-brown);">Send Us a Message</h2>
-                    <form id="contactForm" style="display: grid; gap: 1.5rem;">
-                        <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
-                            <div>
-                                <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--deep-brown);">Full Name *</label>
-                                <input type="text" id="name" required style="width: 100%; padding: 1rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem; transition: var(--transition);">
-                            </div>
-                            <div>
-                                <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--deep-brown);">Email Address *</label>
-                                <input type="email" id="email" required style="width: 100%; padding: 1rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
-                            </div>
-                        </div>
-                        <div>
-                            <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--deep-brown);">Phone Number</label>
-                            <input type="tel" id="phone" style="width: 100%; padding: 1rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
-                        </div>
-                        <div>
-                            <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--deep-brown);">Subject *</label>
-                            <select id="subject" required style="width: 100%; padding: 1rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
-                                <option value="">Select a subject</option>
-                                <option value="order">Order Inquiry</option>
-                                <option value="product">Product Question</option>
-                                <option value="shipping">Shipping & Delivery</option>
-                                <option value="returns">Returns & Exchanges</option>
-                                <option value="sustainability">Sustainability</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--deep-brown);">Message *</label>
-                            <textarea id="message" rows="6" required style="width: 100%; padding: 1rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem; resize: vertical;"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="justify-self: start;">Send Message</button>
-                        <div id="formMessage" style="display: none; padding: 1rem; border-radius: var(--border-radius); margin-top: 1rem;"></div>
-                    </form>
-                </div>
-
-                <!-- Contact Info -->
-                <div style="grid-column: 1; order: 1;">
-                    <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
-                        <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow);">
-                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--sage-green) 0%, var(--sage-dark) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--white);">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
-                                </svg>
-                            </div>
-                            <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--deep-brown);">Visit Our Showroom</h3>
-                            <p style="color: var(--gray-600); line-height: 1.7;">591 Memorial Dr<br>Chicopee, MA 01020<br>United States</p>
-                            <p style="color: var(--gray-500); font-size: 0.875rem; margin-top: 1rem;">Mon-Sat: 10AM - 7PM<br>Sunday: 12PM - 5PM</p>
-                        </div>
-
-                        <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow);">
-                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--terracotta) 0%, var(--terracotta-light) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--white);">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
-                                </svg>
-                            </div>
-                            <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--deep-brown);">Call Us</h3>
-                            <p style="color: var(--gray-600); line-height: 1.7;">Phone: (413) 555-LUXE<br>Toll Free: 1-800-LUXE-MODAL</p>
-                            <p style="color: var(--gray-500); font-size: 0.875rem; margin-top: 1rem;">Available 9AM - 6PM EST</p>
-                        </div>
-
-                        <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow);">
-                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--warm-beige) 0%, var(--cream-dark) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--deep-brown);">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
-                                </svg>
-                            </div>
-                            <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--deep-brown);">Email Us</h3>
-                            <p style="color: var(--gray-600); line-height: 1.7;">General: hello@luxemodal.com<br>Orders: orders@luxemodal.com<br>Press: press@luxemodal.com</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Contact Information Section -->
+    <section class="section-white">
+      <div class="container">
+        <div class="grid grid-cols-3" style="margin-bottom: 4rem;">
+          <div class="card">
+            <div class="card-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
             </div>
-
-            <!-- FAQ Section -->
-            <div style="margin-top: 6rem; padding-top: 4rem; border-top: 1px solid var(--gray-200);">
-                <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: var(--deep-brown);">Frequently Asked Questions</h2>
-                <div style="max-width: 800px; margin: 0 auto; display: grid; gap: 2rem;">
-                    <div>
-                        <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--deep-brown);">What is your return policy?</h3>
-                        <p style="color: var(--gray-600); line-height: 1.7;">We offer a 30-day return policy for unworn items in original condition with tags attached. Visit our <a href="return-policy.html" style="color: var(--sage-green); text-decoration: underline;">Return Policy</a> page for details.</p>
-                    </div>
-                    <div>
-                        <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--deep-brown);">Do you offer international shipping?</h3>
-                        <p style="color: var(--gray-600); line-height: 1.7;">Currently we ship within the United States only. We're working on expanding international shipping soon.</p>
-                    </div>
-                    <div>
-                        <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--deep-brown);">Are your products really sustainable?</h3>
-                        <p style="color: var(--gray-600); line-height: 1.7;">Yes! All our products are made from GOTS-certified organic or GRS-certified recycled materials, produced in Fair Trade facilities. Learn more on our <a href="about.html#sustainability" style="color: var(--sage-green); text-decoration: underline;">About</a> page.</p>
-                    </div>
-                    <div>
-                        <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--deep-brown);">How long does shipping take?</h3>
-                        <p style="color: var(--gray-600); line-height: 1.7;">Standard shipping takes 5-7 business days. Expedited options available at checkout. Free shipping on orders over $150.</p>
-                    </div>
-                </div>
+            <h3>Phone</h3>
+            <p><a href="tel:+15038365016" style="color: var(--color-primary);">+1 503-836-5016</a></p>
+            <p style="color: var(--color-gray-600); font-size: 0.875rem;">Mon-Fri: 8am-6pm<br>Sat: 9am-4pm<br>Sun: Closed</p>
+          </div>
+          
+          <div class="card">
+            <div class="card-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
             </div>
+            <h3>Email</h3>
+            <p><a href="mailto:help@EliteRoofExperts.site" style="color: var(--color-primary);">help@EliteRoofExperts.site</a></p>
+            <p style="color: var(--color-gray-600); font-size: 0.875rem;">We respond within 24 hours</p>
+          </div>
+          
+          <div class="card">
+            <div class="card-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3>Address</h3>
+            <p style="color: var(--color-gray-700);">6423 NW St Helens Rd<br>Portland, OR 97210<br>United States</p>
+          </div>
         </div>
+
+        <h2 class="section-title">Send Us a Message</h2>
+        <div style="max-width: 42rem; margin: 0 auto;">
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 123-4567">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+              </div>
+              <div class="form-group">
+                <label for="service">Service Needed *</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option value="inspection">Roof Inspection</option>
+                  <option value="repair">Roof Repair</option>
+                  <option value="leak">Leak Repair</option>
+                  <option value="replacement">Roof Replacement</option>
+                  <option value="storm">Storm Damage</option>
+                  <option value="emergency">Emergency Service</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your roofing needs..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.125rem;">Send Message</button>
+          </form>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col footer-about">
-                    <a href="index.html" class="footer-logo">
-                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
-                            <rect x="8" y="8" width="24" height="24" stroke="currentColor" stroke-width="1.5" rx="2"/>
-                            <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="1.5"/>
-                        </svg>
-                        <span>LUXE MODAL</span>
-                    </a>
-                    <p>Premium sustainable fashion.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Shop</h4>
-                    <a href="shop.html">All Products</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Support</h4>
-                    <a href="privacy.html">Privacy</a>
-                    <a href="terms.html">Terms</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <p>591 Memorial Dr<br>Chicopee, MA 01020</p>
-                </div>
+  <!-- Footer (same as index.html) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <div class="logo" style="margin-bottom: 1rem;">
+            <div class="logo-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width: 1.5rem; height: 1.5rem;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 LUXE MODAL. All rights reserved.</p>
-            </div>
+            <span style="font-size: 1.125rem; font-weight: 700;">EliteRoof Experts</span>
+          </div>
+          <p style="color: var(--color-gray-400); margin-bottom: 1rem;">Professional roofing services you can trust. Licensed, insured, and dedicated to quality.</p>
         </div>
-    </footer>
-
-    <div class="modal" id="searchModal">
-        <div class="modal-content modal-search">
-            <div class="modal-header"><h3>Search</h3><button class="modal-close" id="closeSearch">×</button></div>
-            <div class="modal-body"><input type="text" class="search-input" id="searchInput" placeholder="Search..."><div class="search-results" id="searchResults"></div></div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
+        
+        <div class="footer-section">
+          <h3>Our Services</h3>
+          <ul>
+            <li>Roof Repair</li>
+            <li>Roof Replacement</li>
+            <li>Roof Inspection</li>
+            <li>Leak Repair</li>
+            <li>Storm Damage Repair</li>
+            <li>Emergency Services</li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <a href="tel:+15038365016">+1 503-836-5016</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <a href="mailto:help@EliteRoofExperts.site">help@EliteRoofExperts.site</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span style="color: var(--color-gray-400);">6423 NW St Helens Rd, Portland, OR 97210, United States</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2026 EliteRoof Experts. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
     </div>
+  </footer>
 
-    <div class="modal" id="cartModal">
-        <div class="modal-content modal-cart">
-            <div class="modal-header"><h3>Cart (<span id="cartModalCount">0</span>)</h3><button class="modal-close" onclick="closeCartModal()">×</button></div>
-            <div class="modal-body">
-                <div id="cartEmptyState" class="empty-state"><h4>Cart is empty</h4><a href="shop.html" class="btn btn-primary">Shop Now</a></div>
-                <div id="cartModalContent" style="display:none;"><div id="cartModalItems"></div><div class="cart-modal-footer"><div class="cart-modal-total"><span>Total:</span><strong id="cartModalTotal">$0.00</strong></div><a href="cart.html" class="btn btn-primary btn-block">Checkout</a></div></div>
-            </div>
+  <!-- Quote Modal (same as index.html) -->
+  <div class="modal-overlay" id="quote-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-quote-modal" aria-label="Close modal">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      
+      <h2 style="margin-bottom: 0.5rem;">Get Your Free Quote</h2>
+      <p style="color: var(--color-gray-600); margin-bottom: 1.5rem;">Fill out the form below and we'll get back to you within 24 hours with a detailed estimate.</p>
+      
+      <form id="quote-form">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="quote-name">Full Name *</label>
+          <input type="text" id="quote-name" name="name" required placeholder="John Smith">
         </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="quote-email">Email Address *</label>
+            <input type="email" id="quote-email" name="email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="quote-phone">Phone Number *</label>
+            <input type="tel" id="quote-phone" name="phone" required placeholder="(555) 123-4567">
+          </div>
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="quote-address">Property Address *</label>
+          <input type="text" id="quote-address" name="address" required placeholder="123 Main St, City, State ZIP">
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="quote-service">Service Type *</label>
+          <select id="quote-service" name="serviceType" required>
+            <option value="">Select a service</option>
+            <option value="roof-repair">Roof Repair</option>
+            <option value="roof-replacement">Roof Replacement</option>
+            <option value="roof-inspection">Roof Inspection</option>
+            <option value="emergency-repair">Emergency Repair</option>
+            <option value="gutter-services">Gutter Services</option>
+            <option value="maintenance">Maintenance</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="quote-message">Project Details</label>
+          <textarea id="quote-message" name="message" rows="4" placeholder="Tell us about your roofing needs..."></textarea>
+        </div>
+        
+        <div style="display: flex; gap: 0.75rem; padding-top: 1rem; flex-direction: column;">
+          <button type="submit" class="btn btn-primary" style="flex: 1;">Submit Quote Request</button>
+          <button type="button" class="btn btn-secondary" style="flex: 1;" onclick="closeQuoteModal()">Cancel</button>
+        </div>
+      </form>
     </div>
+  </div>
 
-    <script src="products-data.js"></script>
-    <script src="app.js"></script>
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formMessage = document.getElementById('formMessage');
-            formMessage.style.display = 'block';
-            formMessage.style.background = 'var(--sage-green)';
-            formMessage.style.color = 'var(--white)';
-            formMessage.textContent = '✓ Thank you! Your message has been sent. We\'ll respond within 24 hours.';
-            this.reset();
-            setTimeout(() => {
-                formMessage.style.display = 'none';
-            }, 5000);
-        });
+  <!-- Cookie Banner -->
+  <div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-content">
+      <div>
+        <p style="margin-bottom: 0.5rem; font-weight: 600;">We use cookies</p>
+        <p class="cookie-text">We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies. <a href="privacy.html">Learn more</a></p>
+      </div>
+      <div class="cookie-actions">
+        <button class="btn btn-primary" id="accept-cookies">Accept</button>
+        <button class="btn btn-secondary" id="decline-cookies">Decline</button>
+      </div>
+    </div>
+  </div>
 
-        // Form validation styling
-        document.querySelectorAll('input, select, textarea').forEach(field => {
-            field.addEventListener('focus', function() {
-                this.style.borderColor = 'var(--sage-green)';
-                this.style.outline = 'none';
-            });
-            field.addEventListener('blur', function() {
-                this.style.borderColor = 'var(--gray-200)';
-            });
-        });
-    </script>
-
-    <style>
-        .page-header {
-            padding-top: 120px;
-            padding-bottom: 4rem;
-            text-align: center;
-            background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
-        }
-        @media (min-width: 1024px) {
-            section .container > div[style*="display: grid"] {
-                grid-template-columns: 1fr 1fr !important;
-            }
-            section .container > div[style*="display: grid"] > div:first-child {
-                order: 1 !important;
-            }
-            section .container > div[style*="display: grid"] > div:last-child {
-                order: 2 !important;
-            }
-        }
-    </style>
+  <script src="js/main.js"></script>
 </body>
 </html>
